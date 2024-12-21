@@ -3,15 +3,16 @@ package com.bbenjamin.models;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-@Getter @Setter @EqualsAndHashCode
+@Getter @Setter @ToString @EqualsAndHashCode
 
 public abstract class Stone {
-    private String color;
-    private String name;
-    private String location;
-    private Integer energyLevel;
-    private Integer numberOfSides;
+    protected String color;
+    protected String name;
+    protected String location;
+    protected Integer energyLevel;
+    protected Integer numberOfSides;
 
     private static final int NUMBER_SIDES = 6;
 

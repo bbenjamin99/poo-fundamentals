@@ -1,5 +1,8 @@
 package com.bbenjamin.models;
 
+import lombok.ToString;
+
+@ToString
 public class MindStone extends Stone{
 
     private static final String COLOR = "Blue";
@@ -13,6 +16,6 @@ public class MindStone extends Stone{
 
     @Override
     public void usePower() {
-
+        System.out.println("Mind control in Stone: " + super.toString());
     }
 }

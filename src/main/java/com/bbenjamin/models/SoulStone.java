@@ -1,5 +1,8 @@
 package com.bbenjamin.models;
 
+import lombok.ToString;
+
+@ToString
 public class SoulStone extends Stone{
     private static final String COLOR = "Green";
     private static final String NAME = "Soul Stone";
@@ -13,6 +16,6 @@ public class SoulStone extends Stone{
 
     @Override
     public void usePower(){
-        System.out.println();
+        System.out.println("Total Control: " + super.toString());
     }
 }

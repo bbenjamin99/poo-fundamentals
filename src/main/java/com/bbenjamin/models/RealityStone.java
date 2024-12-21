@@ -1,5 +1,8 @@
 package com.bbenjamin.models;
 
+import lombok.ToString;
+
+@ToString
 public class RealityStone extends Stone {
 
     private static final String COLOR = "Yellow";
@@ -14,6 +17,8 @@ public class RealityStone extends Stone {
 
     @Override
     public void usePower() {
+            // Business Logic
+        System.out.println("Alter reality: " + super.toString());
 
-    }
+        }
 }

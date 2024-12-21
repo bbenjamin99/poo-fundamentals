@@ -1,5 +1,8 @@
 package com.bbenjamin.models;
 
+import lombok.ToString;
+
+@ToString
 public class SpaceStone extends Stone{
 
     private static final String COLOR = "Purle";
@@ -17,6 +20,6 @@ public class SpaceStone extends Stone{
 
     @Override
     public void usePower(){
-        System.out.println();
+        System.out.println("Manipulate all space: " + super.toString());
     }
 }
