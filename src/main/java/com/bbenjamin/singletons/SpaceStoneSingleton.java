@@ -18,7 +18,7 @@ public class SpaceStoneSingleton {
         public static SpaceStone getInstance(){
             if( spaceStoneInstance == null){
                 log.info("Creating first instance" + MindStoneSingleton.class);
-                synchronized (MindStoneSingleton.class){
+                synchronized (SpaceStoneSingleton.class){
                     if(spaceStoneInstance == null){
                         spaceStoneInstance = new SpaceStone();
                     }

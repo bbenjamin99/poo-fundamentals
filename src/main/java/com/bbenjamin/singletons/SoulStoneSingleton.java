@@ -18,7 +18,7 @@ public class SoulStoneSingleton {
     public static SoulStone getInstance(){
         if(soulStoneInstance == null){
             log.info("Creating first instance of : " + RealityStoneSingleton.class);
-            synchronized (RealityStone.class){
+            synchronized (SoulStoneSingleton.class){
                 if(soulStoneInstance == null){
                     soulStoneInstance = new SoulStone();
                 }

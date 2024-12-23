@@ -11,7 +11,7 @@ public class SpaceStone extends Stone{
     private static final Integer ENERGY_LEVEL = 7;
 
 
-    public SpaceStone(String color, String name, String location, Integer energyLevel){
+    public SpaceStone(){
 
         super(COLOR,NAME,LOCATION, ENERGY_LEVEL );
 

@@ -17,7 +17,7 @@ public class RealityStoneSingleton {
     public static RealityStone getInstance(){
         if(realityStoneInstance == null){
             log.info("Creating first instance of : " + RealityStoneSingleton.class);
-            synchronized (RealityStone.class){
+            synchronized (RealityStoneSingleton.class){
                 if(realityStoneInstance == null){
                     realityStoneInstance = new RealityStone();
                 }

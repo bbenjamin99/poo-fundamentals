@@ -14,13 +14,11 @@ public class PowerStoneSingleton {
     private static volatile PowerStone powerStoneInstance;
 
 
-
-
     public static PowerStone getInstance(){
         if( powerStoneInstance == null){
 
             log.info("Creating first instance" + PowerStone.class);
-            synchronized (MindStoneSingleton.class){
+            synchronized (PowerStoneSingleton.class){
                 if(powerStoneInstance == null){
                     powerStoneInstance = new PowerStone();
                 }
